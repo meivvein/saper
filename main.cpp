@@ -9,13 +9,12 @@ using namespace std;
 // Advanced - 16x16 map, 40 mines
 // Expert - 16x36 map, 99 mines
 
-int map_size_x = 8;
-int map_size_y = 8;
+const int map_size_x = 8;
+const int map_size_y = 8;
+const int number_of_mines = 10;
 
-int map[8][8];
-bool map_revealed[8][8];
-
-int number_of_mines = 10;
+int map[map_size_x][map_size_y];
+bool map_revealed[map_size_x][map_size_y];
 
 int score_to_win;
 bool game_continues = true;
